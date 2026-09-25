@@ -2,7 +2,7 @@ import './ServiceCard.css';
 
 const ServiceCard = ({service, onBook}) => (
     <article className="service-card">
-        <img src={service.icon} alt={service.name} />
+        <img src={service.icon} alt={service.name} loading="lazy" decoding="async" />
         <div className="service-card__content">
             <div className="service-card__heading">
                 <h2>{service.name}</h2>

@@ -11,7 +11,7 @@ const About = () => {
                     <p>We believe a good haircut should feel like a reset: unhurried, personal, and finished with care.</p>
                 </div>
                 <div className="about-page__image">
-                    <img src={barberChair} alt="Vintage barber chair at Mane Cut" />
+                    <img src={barberChair} alt="Vintage barber chair at Mane Cut" loading="lazy" decoding="async" />
                     <span>The chair is waiting</span>
                 </div>
             </section>

@@ -11,7 +11,7 @@ const BarberCard = ({ barber }) => {
     return (
         <article className="barber-card">
             <div className="barber-image-container">
-                <img src={barber.image} alt={barber.name} />
+                <img src={barber.image} alt={barber.name} loading="lazy" decoding="async" />
             </div>
             <div className="barber-card__content">
                 <p className="barber-card__role">{barber.role}</p>

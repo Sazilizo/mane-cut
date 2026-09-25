@@ -54,7 +54,7 @@ const ServicesModal = ({barber, services, onClose}) => {
                 <div className="services-modal__list">
                     {services.map((service) => (
                         <article className="team-service" key={service.id}>
-                            <img src={service.icon} alt="" />
+                            <img src={service.icon} alt="" loading="lazy" decoding="async" />
                             <div className="team-service__body">
                                 <div className="team-service__title">
                                     <h3>{service.name}</h3>

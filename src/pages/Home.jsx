@@ -23,7 +23,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home-intro__feature">
-                    <img src={teamMemberImage} alt="Mane Cut barber holding professional shears" />
+                    <img src={teamMemberImage} alt="Mane Cut barber holding professional shears" loading="lazy" decoding="async" />
                     <p>Walk in for the atmosphere. Leave with a cut that still looks right three weeks from now.</p>
                 </div>
             </section>

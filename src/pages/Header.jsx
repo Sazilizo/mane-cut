@@ -23,7 +23,7 @@ const Header = () => {
         <header className="header">
             <div className="top-bar">
                 <div className="logo--container">
-                    <img className="logo-mark" src={trimmerMark} alt="" />
+                    <img className="logo-mark" src={trimmerMark} alt="" loading="lazy" decoding="async" />
                     <h1 className="logo">Mane Cut</h1>
                 </div>
                 {screenWidth >= 768 && (
@@ -49,7 +49,7 @@ const Header = () => {
             )}
             <div className="header-cta">
                 <div className="header-image-container">
-                    <img src={barberChair} alt="Barbershop" />
+                    <img src={barberChair} alt="Barbershop" loading="lazy" decoding="async" />
                 </div>
                 <div className="header-text">
                     <p className="header-eyebrow">Mane Cut Barbershop</p>

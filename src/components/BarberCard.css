@@ -90,3 +90,9 @@
 .barber-card__footer button:focus-visible {
     background: #542315;
 }
+
+@media (max-width: 580px) {
+    .barber-image-container img {
+        object-position: center top;
+    }
+}

@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import trimmerMark from '../assets/trimmer.png';
 import './Footer.css';
 
 const scrollToTop = () => {
@@ -14,6 +15,7 @@ const Footer = () => (
                     to="/"
                     onClick={scrollToTop}
                 >
+                    <img src={trimmerMark} alt="" loading="lazy" decoding="async" />
                     Mane Cut
                 </Link>
                 <p>Good cuts, good conversation, and a chair worth settling into.</p>

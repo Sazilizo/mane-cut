@@ -1,10 +1,10 @@
 .header {
-    --header-height: 84px;
+    --header-height: clamp(64px, 8vw, 84px);
     --header-gutter: var(--spacing-medium);
     --control-size: 44px;
     position: relative;
     width: 100%;
-    min-height: clamp(560px, 78vh, 820px);
+    /* min-height: clamp(560px, 78vh, 820px); */
     overflow: visible;
     background: #f3f0eb;
     color: #263038;
@@ -29,8 +29,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
     margin: var(--spacing-medium);
+}
+
+.logo {
+    margin: 0;
 }
 
 .logo-mark {
@@ -158,18 +162,20 @@
 }
 .header-cta {
     display: grid;
-    grid-template-columns: minmax(260px, 36%) 1fr;
+    grid-template-columns: minmax(260px, 42%) 1fr;
     align-items: stretch;
     width: min(1180px, 100%);
-    min-height: clamp(560px, 78vh, 820px);
+    /* min-height: clamp(560px, 78vh, 820px); */
     margin: 0 auto;
-    padding-top: 84px;
+    padding-top: var(--header-height);
 }
 
 .header-image-container {
+    position: relative;
+    left: 0;
+    width: 42vw;
     display: grid;
     place-items: center;
-    min-height: 420px;
     overflow: hidden;
     background: #71341f;
 }
@@ -183,6 +189,9 @@
 }
 
 .header-text {
+    position: relative;
+    z-index: 1;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -271,10 +280,13 @@
     .header-cta {
         display: flex;
         flex-direction: column;
-        padding-top: 84px;
+        padding-top: var(--header-height);
     }
 
     .header-image-container {
+        position: relative;
+        inset: auto;
+        width: 100%;
         min-height: 280px;
         max-height: 42vh;
     }

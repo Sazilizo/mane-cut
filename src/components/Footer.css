@@ -17,13 +17,22 @@
 }
 
 .site-footer__logo {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
     margin-bottom: 12px;
     color: #fff;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+.site-footer__logo img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .site-footer p,
