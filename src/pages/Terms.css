@@ -1,0 +1,75 @@
+.terms-page {
+    min-height: 60vh;
+    padding: clamp(64px, 9vw, 112px) 24px 96px;
+    background: #f3f0eb;
+    color: #263038;
+}
+
+.terms-page__intro {
+    width: min(760px, 100%);
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+.terms-page__eyebrow {
+    margin-bottom: 12px;
+    color: #a14b2b;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.terms-page h1 {
+    color: #58636a;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
+}
+
+.terms-page__intro > p:last-child,
+.terms-page__status {
+    margin-top: 12px;
+    color: #6f625b;
+}
+
+.terms-page__status {
+    text-align: center;
+}
+
+.terms-document {
+    width: min(900px, 100%);
+    min-height: 360px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 56px);
+    background: #fff;
+    box-shadow: 0 12px 30px rgb(36 29 25 / 8%);
+}
+
+.terms-document--written {
+    color: #6f625b;
+    line-height: 1.7;
+}
+
+.terms-document--written h2 {
+    margin: 28px 0 8px;
+    color: #58636a;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+.terms-document--written p {
+    margin: 0 0 14px;
+}
+
+.terms-document .docx-wrapper {
+    padding: 0;
+    background: transparent;
+}
+
+.terms-document section.docx {
+    width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}

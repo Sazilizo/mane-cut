@@ -1,0 +1,122 @@
+.about-page {
+    background: #fffaf5;
+    color: #263038;
+}
+
+.about-page__hero,
+.about-page__story,
+.about-page__values {
+    width: min(1160px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.about-page__hero {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 56px;
+    align-items: center;
+    padding: clamp(72px, 10vw, 132px) 0 88px;
+}
+
+.about-page__hero h1 {
+    margin-bottom: 24px;
+}
+
+.about-page__hero p:last-child,
+.about-page__story p,
+.about-page__values p {
+    color: #6f625b;
+    line-height: 1.75;
+}
+
+.about-page__image {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    background: #71341f;
+}
+
+.about-page__image img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.about-page__image span {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 12px;
+    background: #fffaf5;
+    color: #71341f;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about-page__story {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 56px;
+    padding: 80px 0;
+    border-top: 1px solid #e2d8ce;
+}
+
+.about-page__story h2,
+.about-page__values h2 {
+    color: #58636a;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1;
+}
+
+.about-page__story-copy {
+    display: grid;
+    gap: 20px;
+}
+
+.about-page__values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 0 96px;
+}
+
+.about-value {
+    padding-top: 18px;
+    border-top: 2px solid #a14b2b;
+}
+
+.about-value h3 {
+    margin-bottom: 8px;
+    color: #71341f;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 720px) {
+    .about-page__hero,
+    .about-page__story {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        width: min(100% - 32px, 600px);
+    }
+
+    .about-page__hero {
+        padding-top: 72px;
+    }
+
+    .about-page__image,
+    .about-page__image img {
+        min-height: 360px;
+    }
+
+    .about-page__values {
+        grid-template-columns: 1fr;
+        width: min(100% - 32px, 600px);
+        padding-bottom: 64px;
+    }
+}
