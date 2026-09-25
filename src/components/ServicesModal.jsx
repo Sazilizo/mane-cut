@@ -56,15 +56,19 @@ const ServicesModal = ({barber, services, onClose}) => {
                         <article className="team-service" key={service.id}>
                             <img src={service.icon} alt="" loading="lazy" decoding="async" />
                             <div className="team-service__body">
-                                <div className="team-service__title">
-                                    <h3>{service.name}</h3>
-                                    <strong>R {service.price}</strong>
-                                </div>
                                 <p>{service.description}</p>
-                                <span>{service.duration} min</span>
-                                <button type="button" onClick={() => setBookingService(service)}>
-                                    Book this service
-                                </button>
+                                <div className="team-service__footer">
+                                    <div className="team-service__title">
+                                        <div className="team-service__title-row">
+                                            <h3>{service.name}</h3>
+                                            <strong>R {service.price}</strong>
+                                        </div>
+                                        <span>{service.duration} min</span>
+                                    </div>
+                                    <button type="button" onClick={() => setBookingService(service)}>
+                                        Book this service
+                                    </button>
+                                </div>
                             </div>
                         </article>
                     ))}

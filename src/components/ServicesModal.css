@@ -83,9 +83,11 @@
 
 .team-service img {
     width: 104px;
-    height: 100%;
-    min-height: 132px;
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 1.13;
+    align-self: start;
+    object-fit: contain;
+    background: #241d19;
 }
 
 .team-service__body {
@@ -95,7 +97,34 @@
     padding: 16px 16px 16px 0;
 }
 
+.team-service__body p {
+    margin: 0;
+    color: #6f625b;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.team-service__footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 12px;
+    flex-wrap: nowrap;
+}
+
 .team-service__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+    width: auto;
+    flex: 1;
+}
+
+.team-service__title-row {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -104,6 +133,9 @@
 }
 
 .team-service__title h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: 1.05rem;
 }
 
@@ -113,20 +145,17 @@
 }
 
 .team-service__body p {
-    margin: 8px 0;
-    color: #6f625b;
-    font-size: 0.9rem;
-    line-height: 1.45;
+    margin: 0;
 }
 
-.team-service__body span {
-    margin-bottom: 14px;
+.team-service__title span {
     color: #8b7b70;
     font-size: 0.8rem;
+    white-space: nowrap;
 }
 
-.team-service__body button {
-    margin-top: auto;
+.team-service__footer button {
+    margin-left: auto;
     padding: 9px 12px;
     border: 1px solid #71341f;
     border-radius: 999px;
@@ -143,40 +172,72 @@
     to { opacity: 1; }
 }
 
+@media (min-width: 681px) {
+    .services-modal__dialog {
+        width: min(100%, 1040px);
+        max-height: min(860px, calc(100vh - 32px));
+        padding: 40px;
+    }
+
+    .services-modal__list {
+        gap: 18px;
+    }
+
+    .team-service {
+        grid-template-columns: 132px 1fr;
+        gap: 20px;
+    }
+
+    .team-service img {
+        width: 132px;
+    }
+
+    .team-service__body {
+        padding: 20px 20px 20px 0;
+    }
+}
+
 @media (max-width: 680px) {
     .services-modal {
-        padding: 12px;
+        padding: 6px;
     }
 
     .services-modal__dialog {
         max-height: calc(100vh - 20px);
-        padding: 20px 14px;
+        padding: 16px 8px;
     }
 
     .services-modal__list {
         grid-template-columns: 1fr;
+        gap: 8px;
     }
 
     .team-service {
         grid-template-columns: 76px 1fr;
-        gap: 12px;
+        gap: 8px;
     }
 
     .team-service img {
         width: 76px;
-        min-height: 112px;
     }
 
     .team-service__body {
-        padding: 12px 12px 12px 0;
+        padding: 10px 8px 10px 0;
     }
 
     .team-service__body p {
-        margin: 5px 0;
         font-size: 0.82rem;
     }
 
-    .team-service__body span {
-        margin-bottom: 9px;
+    .team-service__footer {
+        gap: 6px 10px;
+    }
+
+    .team-service__title span {
+        font-size: 0.7rem;
+    }
+
+    .team-service__footer button {
+        margin-left: 0;
     }
 }
