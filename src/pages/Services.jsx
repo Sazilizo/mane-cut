@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import './Services.css';
+import './services.css';
 import BookingModal from '../components/BookingModal';
 import ServiceCard from '../components/ServiceCard';
 import {serviceCatalog} from '../data/serviceData';

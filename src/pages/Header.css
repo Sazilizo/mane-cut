@@ -52,7 +52,7 @@
 }
 
 .navigation ul {
-    gap: var(--spacing-small);
+    gap: var(--spacing-medium);
     margin: 0;
     padding: 0;
 }
