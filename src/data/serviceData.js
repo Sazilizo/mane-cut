@@ -6,6 +6,7 @@ import stylingImage from '../assets/hair-styling.jpg';
 
 import TeamMember1Image from '../assets/Teams Photos/Team Member 1.jpg';
 import TeamMember2Image from '../assets/Teams Photos/Team Member.jpg';
+import TeamMember3Image from '../assets/Teams Photos/Team Member 2.jpg';
 
 export const serviceCatalog = [
     {
@@ -69,16 +70,16 @@ export const teamMembers = [
         services: ['Haircut', 'Shave', 'Beard Trim']
     },
     {
-        name: 'Jane Smith',
+        name: 'Adrian Smith',
         role: 'Barber',
         image: TeamMember2Image,
-        description: 'Jane specializes in modern hairstyles and is known for her precision cuts.',
+        description: 'Adrian specializes in modern hairstyles and is known for his precision cuts.',
         services: ['Haircut', 'Coloring', 'Styling']
     },
     {
         name: 'Mike Johnson',
         role: 'Barber',
-        image: TeamMember1Image,
+        image: TeamMember3Image,
         description: 'Mike has a passion for classic barbering techniques and provides a great customer experience.',
         services: ['Haircut', 'Shave', 'Beard Trim', 'Hot Towel Treatment']
     }

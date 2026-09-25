@@ -5,7 +5,13 @@ const Footer = () => (
     <footer className="site-footer">
         <div className="site-footer__inner">
             <div className="site-footer__brand">
-                <Link className="site-footer__logo" to="/">Mane Cut</Link>
+                <Link
+                    className="site-footer__logo"
+                    to="/"
+                    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                >
+                    Mane Cut
+                </Link>
                 <p>Good cuts, good conversation, and a chair worth settling into.</p>
             </div>
             <nav className="site-footer__nav" aria-label="Footer navigation">
