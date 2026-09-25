@@ -1,6 +1,10 @@
 import {Link} from 'react-router-dom';
 import './Footer.css';
 
+const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+};
+
 const Footer = () => (
     <footer className="site-footer">
         <div className="site-footer__inner">
@@ -8,17 +12,17 @@ const Footer = () => (
                 <Link
                     className="site-footer__logo"
                     to="/"
-                    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                    onClick={scrollToTop}
                 >
                     Mane Cut
                 </Link>
                 <p>Good cuts, good conversation, and a chair worth settling into.</p>
             </div>
             <nav className="site-footer__nav" aria-label="Footer navigation">
-                <Link to="/about">About</Link>
-                <Link to="/services">Services</Link>
-                <Link to="/team">Our team</Link>
-                <Link to="/bookings">Book a visit</Link>
+                <Link to="/about" onClick={scrollToTop}>About</Link>
+                <Link to="/services" onClick={scrollToTop}>Services</Link>
+                <Link to="/team" onClick={scrollToTop}>Our team</Link>
+                <Link to="/bookings" onClick={scrollToTop}>Book a visit</Link>
             </nav>
             <div className="site-footer__contact">
                 <p>Open Tuesday to Saturday</p>
@@ -35,7 +39,7 @@ const Footer = () => (
                     <i className="fa-brands fa-facebook-f" aria-hidden="true"></i>
                 </a>
             </div>
-            <Link to="/terms">Terms and Conditions</Link>
+            <Link to="/terms" onClick={scrollToTop}>Terms and Conditions</Link>
         </div>
     </footer>
 );
